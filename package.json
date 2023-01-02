@@ -1,19 +1,23 @@
 {
   "name": "@xxm7/toy-icon",
-  "version": "0.0.16",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "release": "bumpp ./package.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^18.11.18",
     "@xxm7/eslint-config-ts": "^2.0.9",
     "bumpp": "^8.2.1",
     "eslint": "^8.31.0",
     "svgo": "^3.0.2",
-    "vite": "^4.0.3"
+    "ts-morph": "^17.0.1",
+    "vite": "^4.0.3",
+    "vue": "^3.2.45"
   }
 }
