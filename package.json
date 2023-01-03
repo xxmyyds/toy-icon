@@ -2,19 +2,37 @@
   "name": "@xxm7/toy-icon",
   "version": "0.0.2",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "vite build",
+    "clean": "rimraf dist",
+    "build": "pnpm clean && vite build",
     "release": "bumpp ./package.json"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "toy-design",
+    "icon",
+    "vue",
+    "ui",
+    "vite",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
+  "types": "dist/types",
+  "author": "xxmyyds",
+  "repository": "https://github.com/xxmyyds/toy-icon",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^18.11.18",
     "@xxm7/eslint-config-ts": "^2.0.9",
     "bumpp": "^8.2.1",
     "eslint": "^8.31.0",
+    "rimraf": "^3.0.2",
     "svgo": "^3.0.2",
     "ts-morph": "^17.0.1",
     "vite": "^4.0.3",

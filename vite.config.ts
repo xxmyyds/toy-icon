@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     svg({
       tsConfigFilePath: resolve(__dirname, 'tsconfig.json'),
-      outDir: resolve(__dirname, 'dist'),
+      outDir: resolve(__dirname, 'dist', 'types'),
     }),
   ],
   build: {

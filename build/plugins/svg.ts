@@ -122,7 +122,7 @@ export function svg(options: {
 
           await writeFile(
             filepath,
-            outputFile.getText().replace('.svg', ''),
+            outputFile.getText().replace(/\.svg/g, ''),
             'utf8'
           )
 
