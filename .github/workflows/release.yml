@@ -29,9 +29,6 @@ jobs:
           # node版本
           node-version: ${{ matrix.node-version }}
 
-      - name: 设置pnpm
-        uses: pnpm/action-setup@v2
-
       - name: 读取当前版本号
         id: version
         uses: ashley-taylor/read-json-property-action@v1.0
