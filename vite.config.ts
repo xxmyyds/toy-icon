@@ -6,15 +6,15 @@ export default defineConfig({
   plugins: [
     svg({
       tsConfigFilePath: resolve(__dirname, 'tsconfig.json'),
-      outDir: resolve(__dirname, 'dist', 'toy-icon'),
+      outDir: resolve(__dirname, 'dist'),
     }),
   ],
   build: {
     minify: true,
     emptyOutDir: false,
-    outDir: resolve(__dirname, 'dist', 'toy-icon'),
+    outDir: resolve(__dirname, 'dist'),
     lib: {
-      entry: resolve(__dirname, 'packages/toy-icon/index.ts'),
+      entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es'],
       fileName: () => '[name].js',
     },
