@@ -1,6 +1,6 @@
 {
   "name": "@xxm7/toy-icon",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "",
   "scripts": {
     "clean": "rimraf dist",
